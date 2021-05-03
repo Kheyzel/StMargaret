@@ -2,35 +2,28 @@
 @section('content')
  
  <!-- Page Heading -->
- <h1 class="h3 mb-4 text-gray-800">Update Record</h1>
+ <h1 class="h3 mb-4 text-gray-800 text-center">UPDATE MISSION</h1>
  {{--/Page Heading--}}
 
 
- <form action ="{{ route('about_us.update', $aboutUs->ID)}}" method="post" enctype="multipart/form-data">
+ <form action ="{{ route('mission.update', $mission->ID)}}" method="post" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="form-group">
-      <label for="mission">Misson</label>
-      <input type="text"  class="form-control" name ="mission" autocomplete="off" value = "{{$aboutUs->mission}}" >
+      <label class="h4 mb-4 text-gray-700" for="mission" >Mission</label>
+      <textarea class="form-control" name="mission" autocomplete="off" rows="5" >{{$mission->mission}}</textarea>
+    </div>
 
-    </div>
-    <div class="form-group">
-        <label for="mission">Vision</label>
-        <input type="text" class="form-control" name ="vision" autocomplete="off" value = "{{$aboutUs->vision}}" >
-    </div>
+    {{-- <div class="form-group">
+      <label class="h4 mb-4 text-gray-700" for="vision" >Vision</label>
+        <textarea class="form-control"  name="vision" autocomplete="off" rows="5">{{->vision}}</textarea>
+    </div> --}}
 
  
-        <button type = "submit" class="btn btn-sm btn-primary"> Update </button>
+        <button class="btn btn-sm btn-primary justify-content-end" type="submit" > Update </button>
 
   
   </form>
-
-
-
-
-
-
-
 
 @endsection
 

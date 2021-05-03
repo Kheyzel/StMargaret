@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>St Margaret-Dashboard</title>
+    <link rel="icon" href="assets/img/logo_st_margaret.png" type="image/x-icon" sizes="16x16">
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -19,7 +20,8 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
-
+    @yield('page_level_css')
+    
 </head>
 
 <body id="page-top">
@@ -94,7 +96,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('js/sb-admin-2.min.js')}}"></script>
-
+    @yield('page_level_scripts')
 </body>
 
 </html>

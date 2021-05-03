@@ -10,7 +10,9 @@ class Landing_MainController extends Controller
     public function index()
     {
 
+        $galleries = gallery::all();
         $abouts = AboutUs::all();
-        return view('landing_page_main.index', compact('abouts'));
+        
+        return view('landing_page_main.index', compact('abouts', 'galleries'));
     }
 }
