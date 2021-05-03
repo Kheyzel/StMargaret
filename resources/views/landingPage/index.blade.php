@@ -83,7 +83,7 @@
             <div class="col-xl-5">
               <h1>Hospice of St. Margaret of Cortona, Inc.</h1>
               <h2>Franciscan Sisters of the Sacred Hearts</h2>
-              <a href="#about" class="btn-get-started scrollto">Find Out More</a>
+              {{-- <a href="#about" class="btn-get-started scrollto">Find Out More</a> --}}
             </div>
           </div>
         </div>
