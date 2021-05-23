@@ -33,7 +33,7 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Options:</h6>
+                {{-- <h6 class="collapse-header">Options:</h6> --}}
                 <a class="collapse-item" href="{{route('gallery.index')}}">View Albums</a>
             </div>
         </div>

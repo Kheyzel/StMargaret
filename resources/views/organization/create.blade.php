@@ -10,7 +10,8 @@
             <div class="col-12">
           <div class="form-group">
               <label for="org_position">Position</label>
-              <textarea class="form-control" name="org_position" id="org_position"  rows="5"></textarea>
+              <textarea class="form-control" name="org_position" id="org_position"  rows="1"></textarea>
+              
             </div>
             <div class="form-group">
               <label for="org_name">Name</label>

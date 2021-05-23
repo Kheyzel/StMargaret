@@ -40,7 +40,7 @@
   {{-- <header id="header" class="fixed-top navbar-light py-1" style="background-color: #e3f2fd" padding="0px"> --}}
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <a href="{{route('landing.index')}}" class="navbar-brand " > <img src="assets/img/logo_st_margaret.png" alt="" class="d-inline-block align-top" width="50px" height="100%"></a>
+        <a href="{{route('landing.index')}}" class="navbar-brand" > <img src="assets/img/logo_st_margaret.png" alt="" class="d-inline-block align-top" width="70px" height="100%" padding="0px"></a>
         <div class="align-center">
           
         {{-- <a href="{{route('landing.index')}}">Hospice of St. Margaret of Cortona, Inc<span>.</span></a> --}}
@@ -155,27 +155,28 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200" >
+     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200" >
           @foreach ($galleries as $gallery)
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" data-gall="portfolioGallery" class="venobox" title="Gallery">
-            <div class="portfolio-wrap">
-                <img src="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" alt="Image" style =  "height: 350px; width: 100%;">
-              </a>
-              <div class="portfolio-info">
-                {{-- <h4>{{ $gallery -> gallery_description }}</h4> --}}
-                <p>{{ $gallery -> gallery_date }}</p>
-                <div class="portfolio-links">
-                  {{-- <img src="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" width="30px" height="30px" alt="Image"> --}}
-                  {{-- <a href="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-area"></i></a> --}}
-                  <p><a href="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" data-gall="portfolioGallery" class="venobox" title="Gallery">{{ $gallery -> gallery_description }}</a></p>
+            {{-- <a href="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" data-gall="portfolioGallery" class="venobox" title="Gallery"> --}}
+            </a>
+                <div class="portfolio-wrap">
+                  <img src="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" alt="Image" style =  "height: 350px; width: 100%;">
+                <div class="portfolio-info">
+                  <p>
+                    {{ $gallery -> gallery_date }}
+                  </p>
+                    <div class="portfolio-links">
+                    <p>
+                      <a href="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}" data-gall="" class="venobox" title="Gallery">{{ $gallery -> gallery_description }}
+                      </a>
+                    </p>
+                    </div>
                 </div>
               </div>
-            </div>
           </div>
           @endforeach 
-
-        </div>
+    </div>
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -251,7 +252,11 @@
 
         <div class="section-title">
           <h2>Calendar of Activities</h2>
+          @if ($month === null)
+          @else
           <h3>Month of {{$month->formatted_date_month}}</h3>
+          @endif
+         
         </div>
 
 
@@ -276,11 +281,11 @@
             <div class="card" style="width: 18rem;">
               <h4 class="card-header text-dark text-center">{{$calendarOfAct->formatted_date}}</h4> 
               {{-- <img class="card-img-top" src="{{ asset('/storage/gallery_images/'. $calendarOfAct->act_image) }}" alt="Card image cap"> --}}
-              <img class = "ml-5 mt-2" src="{{ asset("/storage/gallery_image/".$calendarOfAct->act_image) }}" width="190px" height="170px" alt="Activity Image"/>
+              <img class = "mx-auto mt-3" src="{{ asset("/storage/gallery_image/".$calendarOfAct->act_image) }}" width="190px" height="170px" alt="Activity Image"/>
               {{-- <img src="{{ asset('/storage/gallery_images/'. $gallery->gallery_image) }}"  width="300px" height="300px" alt="Image"> --}}
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text text-primary text-center">{{$calendarOfAct->act_description}}</p>
+                <h6 class="card-text text-primary text-center fw-bold">{{$calendarOfAct->act_description}}</h6>
               </div>
             </div>
 
