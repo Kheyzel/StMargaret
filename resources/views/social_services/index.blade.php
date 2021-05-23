@@ -2,10 +2,10 @@
 @section('content')
  
  <!-- Page Heading -->
- <h1 class="h3 mb-4 text-gray-800 text-center">SOCIAL SERVICES</h1>
+ <h1 class="h3 mb-4 text-gray-800 text-center">PROGRAMS AND SERVICES</h1>
  {{--/Page Heading--}}
 
- <a class="btn btn-sm btn-primary mb-4 ml-5" href="{{ route('socialServices.create')}}">Add Services</a>
+ <a class="btn btn-sm btn-primary mb-4 ml-5" href="{{ route('socialServices.create')}}">Add Programs and Services</a>
 
         <table class="table">
             <thead class="thead-dark">

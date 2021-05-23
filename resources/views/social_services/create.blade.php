@@ -1,7 +1,7 @@
 @extends('layout.master_layout')
 @section('content')
 <!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Add Services</h1>
+<h1 class="h3 mb-4 text-gray-800">Add Programs and Services</h1>
 
 
   <form action ="{{ route('socialServices.store')}}" method="post">

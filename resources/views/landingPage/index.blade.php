@@ -187,7 +187,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Programs and Services</h2>
           <p>We offer Programs and Social Services that provides shelter, gives nurture and develop youth. We create positive environment where people—the young ones or even adults, develop tools and are empowered to have successful, fulfilling lives.</p>
         </div>
 

@@ -45,7 +45,7 @@
     <li class="nav-item">
         <a class="nav-link" href="{{route('socialServices.index')}}">
             <i class="fas fa-hand-holding-heart"></i>
-            <span>Social Services</span></a>
+            <span>Programs and Services</span></a>
     </li>
 
       <!-- Nav Item - Organization -->
