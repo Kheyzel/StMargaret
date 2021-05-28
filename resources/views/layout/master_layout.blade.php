@@ -10,7 +10,8 @@
     <meta name="author" content="">
 
     <title>St Margaret-Dashboard</title>
-    <link rel="icon" href="assets/img/logo_st_margaret.png" type="image/x-icon" sizes="16x16">
+    {{-- whats is this? --}}
+    <link rel="icon" href="{{asset('assets/img/logo_st_margaret.png')}}" type="image/x-icon" sizes="16x16">
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
