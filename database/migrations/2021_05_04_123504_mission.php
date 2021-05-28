@@ -15,7 +15,7 @@ class Mission extends Migration
     {
         Schema::create('mission', function (Blueprint $table) {
             $table->increments('ID');
-            $table->longText('mission');
+            $table->longText('mission', 1000);
             $table->timestamps();
         });
     }

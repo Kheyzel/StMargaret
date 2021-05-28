@@ -15,7 +15,7 @@ class Vision extends Migration
     {
         Schema::create('vision', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('vision');
+            $table->longText('vision', 1000);
             $table->timestamps();
         });
     }
