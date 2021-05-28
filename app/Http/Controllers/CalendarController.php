@@ -28,7 +28,7 @@ class CalendarController extends Controller
             {
                 $file = $request->file('act_image');
                 $filename =$file->getClientOriginalName();
-                $request-> datact_image->storeAs('gallery_image',$filename,'public');
+                $request-> act_image->storeAs('gallery_image',$filename,'public');
                 $calendar->act_image=$filename;
             }
             $calendar->save();
