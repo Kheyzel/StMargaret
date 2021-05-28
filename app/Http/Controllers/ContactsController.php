@@ -10,13 +10,13 @@ class ContactsController extends Controller
     public function index()
     {
         $contacts = contact::all();
-        return view('contacts.index', compact('contacts'));
+        return view('contact.index', compact('contacts'));
     }
 
     public function edit($contact_id)
      {
          $contact = contact::findOrfail($contact_id);
-         return view('contacts.edit', compact('contact'));
+         return view('contact.edit', compact('contact'));
      }
 
      public function update(Request $request,$contact_id)
@@ -26,7 +26,7 @@ class ContactsController extends Controller
              $request->all()
       );
         
-        return redirect()->route('contacts.index');
+        return redirect()->route('contact.index');
     }
 
 }

@@ -64,7 +64,7 @@
 
     <!-- Contacts -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('contacts.index')}}">
+        <a class="nav-link" href="{{route('contact.index')}}">
             <i class="far fa-address-book"></i>
             <span>Contacts</span></a>
     </li>
