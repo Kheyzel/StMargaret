@@ -17,7 +17,6 @@ class Organization extends Migration
             $table->increments('id');
             $table->string('org_position');
             $table->string('org_name');
-            $table->string('org_image');
             $table->timestamps();
         });
     }
