@@ -64,7 +64,7 @@ Route::put('/calendarOfActivities/{calendarOfAct}', 'CalendarController@update')
 Route::delete('/calendarOfActivities/{calendarOfAct}', 'CalendarController@destroy')->name('calendar.destroy')->middleware('auth');
 
 //Contacts
-Route::get('/contacts', 'ContactsController@index')->name('contacts.index')->middleware('auth');
+Route::get('/contacts', 'ContactsController@index')->name('contact.index')->middleware('auth');
 Route::get('/contacts/edit/{id}', 'ContactsController@edit')->name('contact.edit')->middleware('auth');
 Route::put('/contacts/update/{id}', 'ContactsController@update')->name('contact.update')->middleware('auth');
 
